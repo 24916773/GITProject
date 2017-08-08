@@ -2,3 +2,4 @@ C:\Users\Louis\Documents\Visual Studio 2015\GitProject\GitProject\bin\Debug\GitP
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\bin\Debug\GitProject.exe.config
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProject.exe
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProject.pdb
+C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\bin\Debug\GitProject.exe.config
