@@ -17,7 +17,7 @@ namespace GitProject
             randNum = new int[num];
         }
 
-        private void generateNumbers() 
+        public void generateNumbers() 
         {
             Random randomObj = new Random();
             for (int i = 0; i < n; i++)
@@ -26,7 +26,7 @@ namespace GitProject
             }
         }
 
-        private int randomNumberMin()
+        public int randomNumberMin()
         {
             int smallest = randNum[0];
             for (int i = 1; i < n; i++)
