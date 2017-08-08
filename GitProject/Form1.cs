@@ -27,5 +27,11 @@ namespace GitProject
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AugustoForm form = new AugustoForm();
+            form.Show();
+        }
     }
 }
