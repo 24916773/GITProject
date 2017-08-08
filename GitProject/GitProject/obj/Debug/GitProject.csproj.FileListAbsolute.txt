@@ -7,3 +7,5 @@ C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProje
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProject.csproj.GenerateResource.Cache
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProject.exe
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProject.pdb
+C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\bin\Debug\GitProject.exe
+C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\bin\Debug\GitProject.pdb
