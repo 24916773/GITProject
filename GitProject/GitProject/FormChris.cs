@@ -19,8 +19,8 @@ namespace GitProject
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            stat statObj = new stat(Convert.ToInt16(textBoxNumber.Text));
-            MessageBox.Show("Minimun of the random numbers: " + statObj.randomNumberMin());
+            statChris statObj = new statChris(Convert.ToInt16(textBoxNumber.Text));
+            MessageBox.Show("Minimun of the random numbers: " + statObj.minNumber());
         }
     }
 }
