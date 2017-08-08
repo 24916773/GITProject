@@ -19,7 +19,8 @@ namespace GitProject
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            FormChris formChrisObj = new FormChris();
+            formChrisObj.Show();
         }
     }
 }
