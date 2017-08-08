@@ -42,7 +42,14 @@ namespace GitProject
                 largest = stat.largest(numArray);
             }
 
-            MessageBox.Show("The Largest Number of the " + n + " numbers is "+largest);
+            if (betweentest.Testn(n) == true)
+            {
+                MessageBox.Show("The Largest Number of the " + n + " numbers is " + largest);
+            }
+            else
+            {
+                MessageBox.Show("Please enter a number between 5 and 20");
+            }
         }
     }
 }
