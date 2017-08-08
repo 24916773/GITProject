@@ -17,14 +17,26 @@ namespace GitProject
             randNum = new int[num];
         }
 
-        private void generateNumbers()
+        private void generateNumbers() 
         {
             Random randomObj = new Random();
-
             for (int i = 0; i < n; i++)
             {
                 randNum[i] = randomObj.Next(100);
             }
+        }
+
+        private int randomNumberMin()
+        {
+            int smallest = randNum[0];
+            for (int i = 1; i < n; i++)
+            {
+                if (randNum[i] < smallest)
+                {
+                    smallest = randNum[i];
+                }   
+            }
+            return smallest;
         }
     }
 }
