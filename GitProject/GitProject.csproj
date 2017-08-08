@@ -60,6 +60,13 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GenerateNumber.cs" />
+    <Compile Include="IvanClass.cs" />
+    <Compile Include="IvanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IvanForm.Designer.cs">
+      <DependentUpon>IvanForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LouisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IvanForm.resx">
+      <DependentUpon>IvanForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LouisForm.resx">
       <DependentUpon>LouisForm.cs</DependentUpon>
