@@ -18,5 +18,15 @@ namespace GitProject
             }
             return Math.Round(total / arr.Length);
         }
+
+       public int GCD(int[] numbers)
+        {
+            return numbers.Aggregate(GCD);
+        }
+
+        public int GCD(int x, int y)
+        {
+            return y == 0 ? x : GCD(y, x % y);
+        }
     }
 }
