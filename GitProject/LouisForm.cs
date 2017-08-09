@@ -40,6 +40,8 @@ namespace GitProject
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
                 int n = Convert.ToInt32(textBox1.Text);
                 RandomNR = new int[n];
                 for (int i = 0; i <= n - 1; i++)
@@ -56,7 +58,11 @@ namespace GitProject
                 {
                     MessageBox.Show("Number not between 5 or 20");
                 }
-            
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Input an int");
+            }
          
         }
 

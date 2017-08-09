@@ -20,7 +20,14 @@ namespace GitProject
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             int[] array;
+            try
+            {
                 int n = Convert.ToInt16(textBoxNumber.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Input an int");
+            }
             Test oTest = new Test();    
 
                 if(oTest.Testn(n))
@@ -32,8 +39,7 @@ namespace GitProject
                 }
                 else
                 {
-                    Exception ex = new Exception("Please enter a number between 5 and 20");
-                    throw ex;
+                MessageBox.Show("Please enter a number between 5 and 20");
                 }   
         }
     }
