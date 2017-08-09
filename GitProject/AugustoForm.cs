@@ -19,13 +19,22 @@ namespace GitProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int iInputValue = 0;
-            AugustoClass myClass = new AugustoClass();
+            int iInputValue = 0;// inputted value
+            AugustoClass oClass = new AugustoClass();// class containing random method generater
+            Test oTest = new Test();// test class containing test for between 5 and 20
+            stat oStat = new stat();// stat class containing stat method
+            iInputValue = Convert.ToInt16(textBox2.Text);
 
-                iInputValue = Convert.ToInt16(textBox2.Text);
-                    int[] list = myClass.getRandom(iInputValue);
-                    int iMedian = myClass.getMedian(list);
-                    MessageBox.Show("Median is:" + iMedian);
+            if (oTest.Testn(iInputValue))
+            {
+                int[] list = oClass.GetRandomArray(iInputValue);
+                int iMedian = oStat.GetMedian(list);
+                MessageBox.Show("Median is:" + iMedian);
+            }
+            else
+            {
+                MessageBox.Show("Input a value between 5 and 20");
+            }
         }
     }
 }

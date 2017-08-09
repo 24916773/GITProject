@@ -36,5 +36,24 @@ namespace GitProject
             ave = arr.Average();
             return ave;
         }
+
+        public int GetMedian(int[] list)// calculate median
+        {
+            int iMiddle = 0, iTemp1 = 0, iTemp2 = 0;
+
+            Array.Sort(list);// median needs a sorted list
+
+            if ((list.Length % 2) == 0)
+            {
+                iTemp1 = (list.Length / 2) - 1;
+                iTemp2 = list.Length / 2;
+                iMiddle = (list[iTemp1] + list[iTemp2]) / 2;
+                return iMiddle;
+            }
+            else
+                iMiddle = list.Length / 2;
+
+            return list[iMiddle];
+        }
     }
 }
