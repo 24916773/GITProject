@@ -9,3 +9,4 @@ C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProje
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\obj\Debug\GitProject.pdb
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\bin\Debug\GitProject.exe
 C:\Projects\ITRW324_Projects\GITProject\GitProject\GitProject\bin\Debug\GitProject.pdb
+C:\Users\deWit777\Desktop\ITRW324\GITProject\GitProject\GitProject\bin\Debug\GitProject.exe.config
