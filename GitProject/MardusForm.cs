@@ -44,7 +44,7 @@ namespace GitProject
                 stat tstNums = new stat();
 
                 gCD = tstNums.GCD(list);
-                MessageBox.Show(Convert.ToString(gCD));
+                MessageBox.Show(Convert.ToString("The greatest CD is: " + gCD));
             }
             else
             {
