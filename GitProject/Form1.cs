@@ -51,5 +51,11 @@ namespace GitProject
             NNF Neandrefrm = new NNF();
             Neandrefrm.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ChrisForm cForm = new ChrisForm();
+            cForm.Show();
+        }
     }
 }
