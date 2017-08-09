@@ -16,5 +16,26 @@ namespace GitProject
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int n = Convert.ToInt16(textBoxNumber.Text);
+                if(n>=5 && n <=20)
+                {
+                    ChrisClass cClass = new ChrisClass(n);
+                }
+                else
+                {
+                    Exception ex = new Exception("Please enter a number between 5 and 20");
+                    throw ex;
+                }   
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Please enter a number between 5 and 20");
+            }
+        }
     }
 }

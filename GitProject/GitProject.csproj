@@ -53,6 +53,13 @@
     <Compile Include="AugustoForm.Designer.cs">
       <DependentUpon>AugustoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChrisClass.cs" />
+    <Compile Include="ChrisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChrisForm.Designer.cs">
+      <DependentUpon>ChrisForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +99,9 @@
     <Compile Include="Test.cs" />
     <EmbeddedResource Include="AugustoForm.resx">
       <DependentUpon>AugustoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChrisForm.resx">
+      <DependentUpon>ChrisForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
