@@ -19,7 +19,9 @@ namespace GitProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Test testNum = new Test();
+            try
+            {
+                Test testNum = new Test();
             bool mardus;
             mardus = testNum.Testn(Convert.ToInt16(ranAmount.Text));
             int gCD;
@@ -49,6 +51,12 @@ namespace GitProject
             else
             {
                 MessageBox.Show("Please make sure that the number that was entered is betwwen 5 and 20");
+            }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Input an int");
             }
         }
 
