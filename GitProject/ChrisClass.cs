@@ -15,6 +15,7 @@ namespace GitProject
         {
             n = num;
             randNum = new int[n];
+            generateRandomNumbers();
         }
 
         private void generateRandomNumbers()

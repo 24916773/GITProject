@@ -25,6 +25,7 @@ namespace GitProject
                 if(n>=5 && n <=20)
                 {
                     ChrisClass cClass = new ChrisClass(n);
+                    MessageBox.Show("Minimum random number: " + cClass.minimumRandom());
                 }
                 else
                 {
