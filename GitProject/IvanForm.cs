@@ -14,6 +14,7 @@ namespace GitProject
     {
         IvanClass stat = new IvanClass();
         Test betweentest = new Test();
+        int n;
         int[] numArray;
         int largest;
         public IvanForm()
@@ -33,23 +34,31 @@ namespace GitProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int n = Convert.ToInt32(textBox1.Text);
-            numArray = new int[n];
-            for (int i = 0; i < numArray.Length; i++)
+            try
             {
-                numArray[i] = stat.Randomizer();
-                richTextBox1.AppendText(numArray[i].ToString()+ "\r\n");
-                largest = stat.largest(numArray);
+                n = Convert.ToInt32(textBox1.Text);
+                numArray = new int[n];
+                for (int i = 0; i < numArray.Length; i++)
+                {
+                    numArray[i] = stat.Randomizer();
+                    richTextBox1.AppendText(numArray[i].ToString() + "\r\n");
+                    largest = stat.largest(numArray);
+                }
+                if (betweentest.Testn(n) == true)
+                {
+                    MessageBox.Show("The Largest Number of the " + n + " numbers is " + largest);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a number between 5 and 20");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Only integers are allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (betweentest.Testn(n) == true)
-            {
-                MessageBox.Show("The Largest Number of the " + n + " numbers is " + largest);
-            }
-            else
-            {
-                MessageBox.Show("Please enter a number between 5 and 20");
-            }
+         
         }
     }
 }
