@@ -20,9 +20,11 @@ namespace GitProject
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             int[] array;
+            int n = 0;
+
             try
             {
-                int n = Convert.ToInt16(textBoxNumber.Text);
+                n = Convert.ToInt16(textBoxNumber.Text);
             }
             catch (Exception ex)
             {
@@ -30,17 +32,17 @@ namespace GitProject
             }
             Test oTest = new Test();    
 
-                if(oTest.Testn(n))
-                {
-                    ChrisClass cClass = new ChrisClass();
+            if(oTest.Testn(n))
+            {
+                ChrisClass cClass = new ChrisClass();
                 array = cClass.GetRandomNumbers(n);
                 stat oStat = new stat();
-                    MessageBox.Show("Minimum random number: " + oStat.minimumRandom(array, n));
-                }
-                else
-                {
+                MessageBox.Show("Minimum random number: " + oStat.minimumRandom(array, n));
+            }
+            else
+            {
                 MessageBox.Show("Please enter a number between 5 and 20");
-                }   
+            }   
         }
     }
 }
