@@ -25,8 +25,6 @@ namespace GitProject
 
         private void btnAns_Click(object sender, EventArgs e)
         {
-            try
-            {
                 int n = Convert.ToInt32(txtBoxAns.Text);
                 richTextBox1.AppendText("\n");
                 RandomNR = new int[n];
@@ -43,13 +41,7 @@ namespace GitProject
                 else
                 {
                     MessageBox.Show("Error: Number not between 5 or 20");
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error: Please enter a valid number" + ex);
-            }
-           
+                }       
         }
 
         

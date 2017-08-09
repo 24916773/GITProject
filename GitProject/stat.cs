@@ -55,5 +55,18 @@ namespace GitProject
 
             return list[iMiddle];
         }
+
+        public int minimumRandom(int[] randNum, int n)
+        {
+            int smallest = randNum[0];
+            for (int i = 1; i < n; i++)
+            {
+                if (randNum[i] < smallest)
+                {
+                    smallest = randNum[i];
+                }
+            }
+            return smallest;
+        }
     }
 }
