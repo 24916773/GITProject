@@ -28,5 +28,13 @@ namespace GitProject
         {
             return y == 0 ? x : GCD(y, x % y);
         }
+
+        public double calcMean(int[] arr)
+        {
+            double ave;
+
+            ave = arr.Average();
+            return ave;
+        }
     }
 }

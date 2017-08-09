@@ -13,7 +13,7 @@ namespace GitProject
 {
     public partial class NNF : Form
     {
-        GenNum GTEngine = new GenNum();
+        GenerateNumber GTEngine = new GenerateNumber();
         stat statistical = new stat();
         Test tn = new Test();
         int[] RandomNR;

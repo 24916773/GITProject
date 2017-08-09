@@ -12,7 +12,7 @@ namespace GitProject
 
         public int Generate()
         {
-            return r.Next();
+            return r.Next(1, 50);
         }
 
     }
